@@ -9,7 +9,7 @@ form.addEventListener('input', (event) => {
  amount = event.currentTarget.value;
 })
 buttonCreate.addEventListener('click',createBoxes)
-
+let number = 30;
 
 function createBoxes() {
   function getRandomHexColor() {
@@ -20,7 +20,7 @@ function createBoxes() {
     const newBox = document.createElement('div');
     arrBoxes.push(newBox);
   }
-  let number = 30;
+  
   
   arrBoxes.map((el, index) => {
     number += 10;
